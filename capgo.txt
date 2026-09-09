@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+}
+
+body {
+    background: linear-gradient(135deg, #ffd1dc, #ffeba7);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+.face-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    max-width: 350px;
+    margin: 0 auto;
+    border: 5px dashed #ff6b9d;
+}
+
+/* THE FACE — Low Budget Bieber Style 😂 */
+.face {
+    position: relative;
+    width: 220px;
+    height: 260px;
+    margin: 0 auto 25px;
+}
+
+.face-outline {
+    width: 200px;
+    height: 230px;
+    background: #ffdbac;
+    border-radius: 50% 50% 45% 45%;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    border: 3px solid #e0ac78;
+}
+
+/* HAIR — Low budget Bieber fringe */
+.hair {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 5;
+}
+
+.bieber-cut {
+    width: 180px;
+    height: 70px;
+    background: #8B4513;
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    transform: rotate(-5deg);
+    border: 3px solid #5c2e0a;
+}
+
+/* EYES — Keng Koy / funny cross-eyed look */
+.eye {
+    width: 35px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    border: 2px solid #333;
+}
+
+.left-eye { left: 50px; }
+.right-eye { right: 50px; }
+
+.pupil {
+    width: 15px;
+    height: 18px;
+    background: #222;
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* Keng koy — pupils looking different directions 😂 */
+.left-pupil {
+    bottom: 5px;
+    right: 2px;
+}
+.right-pupil {
+    bottom: 5px;
+    left: 2px;
+}
+
+/* Eyebrows — funny slanted */
+.brow {
+    width: 45px;
+    height: 6px;
+    background: #5c2e0a;
+    position: absolute;
+    top: 85px;
+    border-radius: 3px;
+}
+
+.left-brow {
+    left: 45px;
+    transform: rotate(15deg);
+}
+.right-brow {
+    right: 45px;
+    transform: rotate(-15deg);
+}
+
+/* Nose — simple low budget */
+.nose {
+    width: 20px;
+    height: 30px;
+    border-left: 3px solid #e0ac78;
+    border-right: 3px solid #e0ac78;
+    border-bottom: 3px solid #e0ac78;
+    border-radius: 0 0 50% 50%;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* MOUTH — silly smirk */
+.mouth {
+    width: 80px;
+    height: 40px;
+    border-bottom: 5px solid #8b0000;
+    border-radius: 0 0 50% 50%;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* BIG MOLE — the star feature! */
+.mole {
+    width: 18px;
+    height: 18px;
+    background: #1a1a1a;
+    border-radius: 50%;
+    position: absolute;
+    top: 160px;
+    right: 45px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+/* TEXT STYLES */
+.name {
+    font-size: 28px;
+    color: #2c2c2c;
+    font-weight: bold;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0px #ffb3c6;
+}
+
+.subtitle {
+    color: #ff4081;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    color: #666;
+    font-size: 14px;
+    font-style: italic;
+}
